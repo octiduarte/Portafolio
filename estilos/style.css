@@ -1,0 +1,202 @@
+html {
+  font-family: "Lekton", sans-serif;
+}
+body {
+  margin: 0;
+}
+
+main {
+  padding: 20px 0px;
+}
+
+.burger-icon {
+  display: none;
+  cursor: pointer;
+  padding: 15px;
+  color: white;
+  font-size: 30px;
+}
+
+.line {
+  height: 3px;
+  width: 25px;
+  background-color: #000000;
+  margin: 5px 0;
+}
+
+.menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+header {
+  background-color: rgba(255, 255, 255, 0.959);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  width: 100%;
+  position: fixed;
+  width: 100%;
+}
+
+.boton-redes {
+  display: inline-block;
+}
+
+.boton-redes::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: rgb(199, 101, 139);
+  transition: width 0.3s;
+}
+
+.boton-redes:hover::after {
+  width: 100%;
+}
+
+/* primera Seccion */
+
+.avatar {
+  transition: transform 0.3s ease-in-out;
+}
+
+.avatar:hover {
+  transform: scale(1.1);
+}
+
+#inicio {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url("../imagenes/background/background.png");
+  height: 100vh;
+}
+
+.bienvenidos-h3 {
+  color: rgb(199, 101, 139);
+}
+
+.boton-logo {
+  color: black;
+  font-size: 2.5rem;
+  text-decoration: none;
+}
+
+.bienvenida-div {
+  font-size: 1.6rem;
+  padding: 1rem 5rem 5rem 5rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 13px 12px 5px rgba(0, 0, 0, 0.1);
+}
+
+.boton-inicio {
+  color: rgb(199, 101, 139) !important;
+}
+.boton-nav {
+  color: black;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.boton-nav:hover {
+  color: rgb(199, 101, 139);
+}
+
+.boton-portafolio {
+  border-radius: 10px;
+  border: 1px solid black;
+  padding: 6px 15px 5px 16px;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background-color: black;
+}
+
+.boton-portafolio:hover {
+  background-color: rgba(0, 0, 0, 0.848);
+}
+
+/* Segunda Seccion */
+
+.retrato {
+  width: 350px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  height: 350px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#sobre-mi {
+  background-color: black;
+  height: 100vh;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+
+
+
+.texto-sobreMi {
+  width: 700px;
+  color: white;
+}
+
+.titulo-sobreMi {
+  border-bottom: 1px solid white;
+  width: 128px;
+  margin: 0px !important;
+}
+
+/*  Responsive */
+
+@media only screen and (max-width: 415px) {
+  .burger-icon {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu-nav {
+    display: flex;
+    flex-direction: column;
+  }
+  /* Primera Seccion */
+
+  #inicio {
+    flex-direction: column-reverse;
+  }
+
+  .avatar {
+    width: 60%;
+  }
+
+  .bienvenida-div {
+    font-size: 1rem;
+    padding: 1rem 1rem 1rem 1rem;
+    margin: 3rem 1.5rem 1rem 1.5rem;
+  }
+
+  /* Segunda Seccion */
+  .retrato {
+    width: 200px;
+    height: 200px;
+  }
+
+  .texto-sobreMi {
+    width: 300px;
+    color: white;
+  }
+
+  #sobre-mi {
+    flex-direction: column-reverse;
+  }
+}
