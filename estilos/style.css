@@ -129,26 +129,26 @@ header {
 }
 
 #sobre-mi {
-  background-color: black;
+  background-image: url("../imagenes/background/sobre-mi.jpg");
   height: 100vh;
   display: flex;
-  flex-direction: row-reverse;
+  flex-direction: row                                                                                                                                                                                                                                    ;
   justify-content: space-evenly;
   align-items: center;
 
 }
 
 
-
-
 .texto-sobreMi {
   width: 700px;
   color: white;
+  font-size: 20px;
+  background-color: #00000091;
+  border-radius: 15px;
 }
 
 .titulo-sobreMi {
   border-bottom: 1px solid white;
-  width: 128px;
   margin: 0px !important;
 }
 
@@ -192,8 +192,10 @@ header {
   }
 
   .texto-sobreMi {
-    width: 300px;
+    width: auto;
     color: white;
+    margin: 10px;
+    font-size: unset;
   }
 
   #sobre-mi {
