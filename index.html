@@ -23,16 +23,17 @@
 
       <div class="menu">
         <div>
-          <a class="boton-logo" href="#inicio">/OD/</a>
+          <a class="boton-logo" href="#inicio">&lt;/OD&gt;</a>
         </div>
         <div class="menu-nav">
-          <a class="boton-nav boton-inicio boton-redes" href="#inicio">Inicio</a>
+          <a class="boton-nav boton-inicio boton-redes" href="#inicio"
+            >Inicio</a
+          >
           <a class="boton-nav boton-redes" href="#sobre-mi">Sobre mi</a>
-          <a class="boton-nav boton-redes" href="">Servicios</a>
+          <a class="boton-nav boton-redes" href="#servicios">Servicios</a>
           <a class="boton-nav boton-redes" href="">Portafolio</a>
           <a class="boton-nav boton-redes" href="">Contacto</a>
         </div>
-
         <div>
           <a
             class="boton-redes"
@@ -46,7 +47,11 @@
           /></a>
         </div>
       </div>
+      <div class="progreso-contenedor">
+        <div class="progreso-barra" id="myBarra"></div>
+      </div>
     </header>
+
     <main>
       <div id="inicio">
         <img class="avatar" src="imagenes/avatar/avatar.png" alt="" />
@@ -79,6 +84,16 @@
 
         <div>
           <img class="retrato" src="imagenes/personas/foto.png" alt="" />
+        </div>
+      </div>
+      <div id="servicios">
+        <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="25" data-progress-color="crimson" data-bg-color="black">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
+        </div>
+        <div class="circular-progress" data-inner-circle-color="lightgrey" data-percentage="60" data-progress-color="crimson" data-bg-color="black">
+          <div class="inner-circle"></div>
+          <p class="percentage">0%</p>
         </div>
       </div>
     </main>
