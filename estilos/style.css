@@ -1,3 +1,10 @@
+:root {
+  --progress-bar-width: 110px;
+  --progress-bar-height: 110px;
+  --font-size: 2rem;
+  --color-secundario: rgb(199, 101, 139);
+}
+
 html {
   font-family: "Lekton", sans-serif;
 }
@@ -43,7 +50,7 @@ header {
 
 .progreso-barra {
   height: 5px;
-  background: rgb(199, 101, 139);
+  background: var(--color-secundario);
   width: 0%;
 }
 
@@ -56,7 +63,7 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background-color: rgb(199, 101, 139);
+  background-color: var(--color-secundario);
   transition: width 0.3s;
 }
 
@@ -84,7 +91,7 @@ header {
 }
 
 .bienvenidos-h3 {
-  color: rgb(199, 101, 139);
+  color: var(--color-secundario);
 }
 
 .boton-logo {
@@ -102,7 +109,7 @@ header {
 }
 
 .boton-inicio {
-  color: rgb(199, 101, 139) !important;
+  color: var(--color-secundario) !important;
 }
 .boton-nav {
   color: black;
@@ -112,7 +119,7 @@ header {
 }
 
 .boton-nav:hover {
-  color: rgb(199, 101, 139);
+  color: var(--color-secundario);
 }
 
 .boton-portafolio {
@@ -165,16 +172,20 @@ header {
   background-image: url("../imagenes/background/servicios.jpg");
   height: 100vh;
   background-size: cover;
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
+  align-content: space-evenly;
 }
 
-:root {
-  --progress-bar-width: 200px;
-  --progress-bar-height: 200px;
-  --font-size: 2rem;
+h1{
+margin: 0;
 }
+
+
+
+/* variables para barra de progreso en circulo */
 
 .circular-progress {
   width: var(--progress-bar-width);
@@ -184,18 +195,28 @@ header {
   justify-content: center;
   align-items: center;
 }
+
 .inner-circle {
   position: absolute;
   width: calc(var(--progress-bar-width) - 30px);
   height: calc(var(--progress-bar-height) - 30px);
   border-radius: 50%;
-  background-color: lightgrey;
+  background-color: rgb(255, 255, 255);
 }
 
 .percentage {
   position: relative;
   font-size: var(--font-size);
   color: rgb(0, 0, 0, 0.8);
+}
+
+.barra-progreso-circulo {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 13px 12px 5px rgba(0, 0, 0, 0.1);
 }
 
 /*  Responsive */
