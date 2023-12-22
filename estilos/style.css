@@ -1,7 +1,7 @@
 :root {
   --progress-bar-width: 110px;
   --progress-bar-height: 110px;
-  --font-size: 2rem;
+  --font-size: 1.5rem;
   --color-secundario: rgb(199, 101, 139);
 }
 
@@ -168,24 +168,56 @@ header {
 
 /* Tercer Seccion */
 
-#servicios {
+#skills {
   background-image: url("../imagenes/background/servicios.jpg");
   height: 100vh;
   background-size: cover;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  display: flex;
+  align-content: center;
   align-items: center;
-  justify-items: center;
-  align-content: space-evenly;
+  justify-content: center;
+  flex-direction: column;
 }
 
-h1{
-margin: 0;
+.titulo-skills{
+  overflow: hidden;
+  border-right: 2px solid #000;
+  font-size: 4em;
+  animation: escribir 3s steps(40, end) infinite;
+  font-weight: normal;
+}
+
+@keyframes escribir {
+  0%, 100% {
+    width: 0;
+  }
+  50% {
+    width: 100%;
+  }
 }
 
 
+/* Cuarta seccion */
+
+#portafolio{
+  background-image: url(../imagenes/background/portafolio.jpg);
+  height: 100vh;
+  background-size: cover;
+}
+
+/* Quinta seccion */
+
+#contacto{
+  background-image: url(../imagenes/background/contacto.jpg);
+  height: 100vh;
+  background-size: cover;
+}
 
 /* variables para barra de progreso en circulo */
+
+.organizacion-barra-progreso-circulo {
+  display: flex;
+}
 
 .circular-progress {
   width: var(--progress-bar-width);
@@ -198,8 +230,8 @@ margin: 0;
 
 .inner-circle {
   position: absolute;
-  width: calc(var(--progress-bar-width) - 30px);
-  height: calc(var(--progress-bar-height) - 30px);
+  width: calc(var(--progress-bar-width) - 10px);
+  height: calc(var(--progress-bar-height) - 10px);
   border-radius: 50%;
   background-color: rgb(255, 255, 255);
 }
@@ -217,7 +249,9 @@ margin: 0;
   padding: 20px;
   background-color: rgb(255, 255, 255);
   box-shadow: 13px 12px 5px rgba(0, 0, 0, 0.1);
+  margin: 20px;
 }
+
 
 /*  Responsive */
 

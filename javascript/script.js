@@ -42,8 +42,6 @@ function myFunction() {
   document.getElementById("myBarra").style.width = scrolled + "%";
 }
 
-
-
 // Función que se ejecutará cuando el elemento sea visible
 function startCircularProgressAnimation(progressBar) {
   const progressValue = progressBar.querySelector(".percentage");
@@ -58,13 +56,9 @@ function startCircularProgressAnimation(progressBar) {
     progressValue.textContent = `${startValue}%`;
     progressValue.style.color = `${progressColor}`;
 
-    innerCircle.style.backgroundColor = `${progressBar.getAttribute(
-      "data-inner-circle-color"
-    )}`;
+    innerCircle.style.backgroundColor = `${progressBar.getAttribute("data-inner-circle-color")}`;
 
-    progressBar.style.background = `conic-gradient(${progressColor} ${
-      startValue * 3.6
-    }deg,${progressBar.getAttribute("data-bg-color")} 0deg)`;
+    progressBar.style.background = `conic-gradient(${progressColor} ${startValue * 3.6}deg,${progressBar.getAttribute("data-bg-color")} 0deg)`;
     if (startValue === endValue) {
       clearInterval(progress);
     }
@@ -97,3 +91,5 @@ const circularProgress = document.querySelectorAll(".circular-progress");
 circularProgress.forEach((progressBar) => {
   observer.observe(progressBar);
 });
+
+
