@@ -62,25 +62,24 @@ conectar();
       <div class="bienvenida-div">
         <h3 class="bienvenidos-h3">Bienvenidos,</h3>
         <h1>Soy Octavio Duarte</h1>
-        <p class="p-inicio">Bienvenido a mi portafolio como desarrollador trainee..</p>
-        <a class="boton-portafolio" href="cv/Octavio martin duarte (1).pdf">Descargar CV</a>
+        <p class="p-inicio">Bienvenido a mi portafolio como desarrollador trainee <br> Realizado 100% a mano.</p>
+        <a class="boton-portafolio" href="cv/Octavio Duarte Curriculum Vitae.pdf">Visualizar CV</a>
       </div>
     </section>
     <section id="sobre-mi">
       <div class="texto-sobreMi">
-        <strong>Quien soy</strong>
+        <strong class="quien-soy" >Quien soy</strong>
         <h1 class="titulo-sobreMi">Sobre mi</h1>
-        <p>Me encanta crear sitios web que brinden una experiencia de usuario unica y satisfactoria. Puedes ver algunos
-          de mis proiyectos en la seccion de <strong>Portafolio</strong>
+        <p class="parrafo-sobreMi">Mi nombre es Octavio. Tengo 24 años y actualmente estoy estudiando mi cuarto año de la carrera de Ingenieria en Sistemas de Información en la facultad Cuenca del Plata en la ciudad de Posadas Misiones, Argentina.
+          Me encanta crear sitios web que brinden una experiencia de usuario unica y satisfactoria. Puedes ver algunos
+          de mis proiyectos en la seccion de <a href="" class="palabra-portafolio">Portafolio.</a>
           <br>
           Soy una persona autodidacta, responsable y competitiva con mi trabajo. Constantemente estoy aprendiendo
           nuevas tecnologias y herramientas para mejorar mis habilidades.
-          <br>
-          No dude en <strong>contactarse </strong> conmigo si tiene alguna pregunta.
         </p>
       </div>
       <div>
-        <img class="retrato" src="imagenes/personas/foto.png" alt="" />
+        <img class="retrato" src="imagenes/personas/foto.jpg" alt="" />
       </div>
     </section>
     <section id="skills">

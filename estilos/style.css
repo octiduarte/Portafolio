@@ -12,18 +12,17 @@ body {
   margin: 0;
 }
 
-.logo-pc{
+.logo-pc {
   display: flex;
   align-items: center;
 }
 
-.retrato-header{
+.retrato-header {
   width: 50px;
   height: 50px;
   border-radius: 50%;
   object-fit: cover;
   display: block;
-
 }
 
 .contenedor-header-movil {
@@ -126,7 +125,7 @@ header {
 
 .bienvenida-div {
   font-size: 1.6rem;
-  padding: 1rem 5rem 5rem 5rem;
+  padding: 1rem 3rem 3rem 3rem;
   background-color: white;
   border-radius: 10px;
   box-shadow: 13px 12px 5px rgba(0, 0, 0, 0.1);
@@ -167,8 +166,8 @@ header {
 /* Segunda Seccion */
 
 .retrato {
-  width: 350px; /* Ajusta el tamaño de la imagen según tus necesidades */
-  height: 350px; /* Ajusta el tamaño de la imagen según tus necesidades */
+  width: 350px; 
+  height: 350px; 
   border-radius: 50%;
   object-fit: cover;
 }
@@ -180,7 +179,7 @@ header {
   flex-direction: row;
   justify-content: space-evenly;
   align-items: center;
-  background-size:cover;
+  background-size: cover;
 }
 
 .texto-sobreMi {
@@ -189,9 +188,20 @@ header {
   font-size: 20px;
 }
 
+.palabra-portafolio {
+  font-weight: normal;
+  color: var(--color-secundario);
+  text-decoration: none;
+}
+
+.palabra-portafolio:hover {
+  color: #ccc;
+}
+
 .titulo-sobreMi {
   border-bottom: 1px solid white;
   margin: 0px !important;
+  font-size: smaller;
 }
 
 /* Tercer Seccion */
@@ -297,7 +307,7 @@ header {
 }
 
 .contenedor-formulario {
-  background-color: #fffffff0;;
+  background-color: #fffffff0;
   border-radius: 10px;
   padding: 40px;
   align-items: center;
@@ -398,6 +408,28 @@ header {
 }
 
 /*  Responsive */
+@media (min-width: 1025px) and (max-width: 1537px)  {
+  /* Primera Seccion */
+
+  .avatar {
+    width: 25%;
+  }
+
+  .bienvenida-div {
+    font-size: 1.3rem;
+    padding: 1rem 2rem 2rem 2rem;
+  }
+
+  /* Tercer Seccion */
+  .barra-progreso-circulo {
+    margin: 15px;
+    padding: 5px;
+    font-size: 13px;
+   
+  }
+}
+
+
 
 @media only screen and (max-width: 1025px) {
   .logo-movil {
@@ -435,7 +467,6 @@ header {
   .menu-nav {
     display: flex;
     flex-direction: column;
-    
   }
 
   #inicio {
@@ -502,7 +533,6 @@ header {
     padding: 1.2rem;
     width: 80%;
     margin-top: 2rem;
-    
   }
 
   /* Segunda Seccion */
@@ -514,7 +544,14 @@ header {
   .texto-sobreMi {
     width: 80%;
     color: white;
-    font-size: 0.9rem;
+  }
+
+  .quien-soy {
+    font-size: 30px;
+  }
+
+  .parrafo-sobreMi {
+    font-size: smaller;
   }
 
   #sobre-mi {
@@ -600,16 +637,14 @@ header {
     width: 70%;
     font-size: 0.9rem;
     height: auto;
-  
   }
 
   .titulo-formulario h1 {
     margin: 0;
   }
 
-  .organizacion-redes{
+  .organizacion-redes {
     display: flex;
     justify-content: space-evenly;
   }
-
 }
