@@ -92,4 +92,3 @@ circularProgress.forEach((progressBar) => {
   observer.observe(progressBar);
 });
 
-
